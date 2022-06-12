@@ -7,31 +7,34 @@
     <title>Sistema de Estacionamento</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <main>
-        <div class="container">
-            <div class="logobar">
-                <img src="./img/2316870.png" alt="Logo" class="logo">
-            </div>
-            <div class="carro-dados">
-                <input class="form-input" type="text" id="nome" placeholder="Digite o nome do veículo: " autocomplete="off">
-                <input class="form-input" type="text" id="placa" placeholder="Digite o nome da placa: " autocomplete="off">
-                <button class="btn" id="cadastrar">Cadastrar</button>
-            </div>          
+<body> 
+    <input 
+    type="text"
+    id="nome"
+    placeholder="Digite o nome do veículo: "
+    autocomplete="off"
+    />
+    <input 
+    type="text"
+    id="placa"
+    placeholder="Digite a placa do veículo: "
+    autocomplete="off"
+    />
+    <button id="cadastrar">Cadastrar</button>
+              
             
-            <table>
-                <tr>
-                    <thead class="barra-entrada">
-                        <th>Nome</th>
-                        <th>Placa</th>
-                        <th>Entrada</th>
-                        <th>Ações</th>
-                    </thead>
-                </tr>
-                <tbody id="patio"></tbody>
-            </table>
-        </div>
-    </main>
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Placa</th>
+                <th>Entrada</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="patio"></tbody>
+    </table>
+       
     <script src="./script.js"></script>
 </body>
 </html>
